@@ -1,7 +1,13 @@
 import React from "react";
 
 function GroceryList() {
-  return <div>GroceryList</div>;
+  return (
+    <div className="ui card">
+      <div className="content">
+          GroceryList
+      </div>
+    </div>
+  );
 }
 
 export default GroceryList;

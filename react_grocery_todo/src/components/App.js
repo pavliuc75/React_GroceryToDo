@@ -1,15 +1,10 @@
 import React from "react";
 import SwitchList from "./SwitchList";
 import GroceryList from "./GroceryList";
+import AddItem from "./AddItem";
+import ItemDetails from "./ItemDetails";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  NavLink,
-  Switch,
-  Redirect,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
@@ -18,6 +13,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={SwitchList}></Route>
           <Route path="/GroceryList" component={GroceryList}></Route>
+          <Route path="/AddItem" component={AddItem}></Route>
+          <Route path="/ItemDetails/:id" component={ItemDetails}></Route>
         </Switch>
       </div>
     </Router>
