@@ -1,11 +1,11 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 function ItemDetails() {
   let { id } = useParams();
 
   return (
-    <div className="ui card">
+    <div className="ui fluid card">
       <div className="content">
         <p>
           <b>
@@ -44,7 +44,9 @@ function ItemDetails() {
         <hr />
         <em>* - required field</em>
         <div>
-          <button>Apply Changes</button>
+        <Link to="/GroceryList">
+              <button>Apply changes</button>
+            </Link>
         </div>
         <p>
           <em>@errorMessage</em>

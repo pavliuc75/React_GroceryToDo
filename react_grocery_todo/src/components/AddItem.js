@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 class AddItem extends React.Component {
   render() {
     return (
-      <div className="ui card">
+      <div className="ui fluid card">
         <div className="content">
           <p>
             <b>Add item</b>
@@ -40,7 +41,9 @@ class AddItem extends React.Component {
           <hr />
           <em>* - required field</em>
           <div>
-            <button>Add</button>
+            <Link to="/GroceryList">
+              <button>Add</button>
+            </Link>
           </div>
           <p>
             <em>@errorMessage</em>

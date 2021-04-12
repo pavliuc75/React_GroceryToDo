@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function SwitchList() {
   return (
-    <div className="ui card">
+    <div className="ui fluid card">
       <div className="content">
         <p>
           <b>Input list ID:</b>
